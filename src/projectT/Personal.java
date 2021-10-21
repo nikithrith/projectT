@@ -16,6 +16,7 @@ public class Personal {
 	 
 		   
 		   ///sssssssssssssssssssssssssss
+		   ////ssssssssssssssssss
 		   this.firstName = firstName;
 		   this.secondName = secondName;
 		   this.thirdName = thirdName;
