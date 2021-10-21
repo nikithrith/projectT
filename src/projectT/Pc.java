@@ -10,9 +10,13 @@ public class Pc extends Shop {
 	private String pcCase;
 	private String cooling;
 	// cpu, gpu, psu, ram, motherBoard, hdd, pcCase, cooling
+	
 	public Pc(String cpu,String gpu,String psu,String ram,String motherBoard,
-			String hdd,String pcCase,String cooling,double price,int yearOfProduction, int quantity,String brand, int warranty) {
-		super (price, yearOfProduction, quantity, brand, warranty);
+			String hdd,String pcCase,String cooling,double price,int yearOfProduction, 
+			int quantity,String brand, int warranty) {
+		
+		
+		super (price, yearOfProduction, quantity, brand, warranty);	
 		this.cpu = cpu;
 		this.gpu = gpu;
 		this.psu = psu;

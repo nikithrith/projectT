@@ -11,12 +11,12 @@ public class Personal {
 	   private int salary;
 	   private int workingHours;
 	 
+	   public Personal() {
+		   
+	   }
 	   public Personal(String firstName,String secondName, String thirdName,String phoneNumber,
 			            int age, String EGN, String position,int salary,int workHours) {
-	 
-		   
-		   ///sssssssssssssssssssssssssss
-		   ////ssssssssssssssssss
+	 	
 		   this.firstName = firstName;
 		   this.secondName = secondName;
 		   this.thirdName = thirdName;

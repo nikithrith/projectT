@@ -1,12 +1,12 @@
 package projectT;
 
-public class sellers extends Personal  {
+public class Seller extends Personal  {
 	
 	private int sales;
 	private String shift;
 	//firstName , secondName,thirdName,phoneNumber,age,EGN,position,salary,workHours,sales,shift
  
-	 public sellers(String firstName,String secondName, String thirdName,String phoneNumber,
+	 public Seller(String firstName,String secondName, String thirdName,String phoneNumber,
 	            int age, String EGN, String position,int salary,int workHours, int sales, String shift) {
 	   super(firstName,secondName,thirdName,phoneNumber,age,EGN,position,salary,workHours);
 	   this.sales = sales;

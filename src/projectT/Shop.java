@@ -8,6 +8,19 @@ public class Shop {
 	   private int warranty;
 	 // price, yearOfProduction, quantity, brand, warranty
 	   
+	  public Shop() {
+		  
+	  }
+	  
+	  public Shop(double price,int yearOfProduction, int quantity,String brand, int warranty) {
+			this.price=price;
+			this.yearOfProduction = yearOfProduction;
+			this.quantity = quantity;
+			this.brand = brand;
+			this.warranty= warranty;
+		 
+		  }
+	  
 	   public double getPrice() {
 		return price;
 	}
@@ -48,13 +61,6 @@ public class Shop {
 		this.warranty = warranty;
 	}
 	 
-	public Shop(double price,int yearOfProduction, int quantity,String brand, int warranty) {
-		this.price=price;
-		this.yearOfProduction = yearOfProduction;
-		this.quantity = quantity;
-		this.brand = brand;
-		this.warranty= warranty;
-	 
-	  }
+	
 	
 }

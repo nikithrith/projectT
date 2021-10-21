@@ -8,16 +8,16 @@ public class Laptopi extends Shop{
 	private String hdd;
 	private String RGB;
 	
-	public Laptopi (String cpu, String gpu, String ram, String screen, String hdd, String RGB) {
-		super(cpu, gpu, psu, ram, motherBoard, hdd, pcCase, cooling);
+	public Laptopi() {
+		
+	}
+	public Laptopi (String cpu, String gpu, String ram, String screen, String hdd, String RGB,double price,
+			int yearOfProduction, int quantity,String brand, int warranty) {
+		
+		super(price,yearOfProduction,quantity,brand, warranty);
 		this.cpu = cpu;
 		this.gpu = gpu;
 		this.ram = ram;
-		
-		//  laptop Laptop = new Laptop();
-		// zdr
-		//dd
-		
 	}
 
 	public String getCpu() {
