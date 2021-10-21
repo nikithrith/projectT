@@ -13,9 +13,9 @@ public class Laptopi extends Shop{
 		this.cpu = cpu;
 		this.gpu = gpu;
 		this.ram = ram;
-		this.
+		
 		//  laptop Laptop = new Laptop();
-		//zdr
+		// zdr
 	}
 
 	public String getCpu() {
