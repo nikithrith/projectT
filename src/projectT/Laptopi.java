@@ -16,6 +16,8 @@ public class Laptopi extends Shop{
 		
 		//  laptop Laptop = new Laptop();
 		// zdr
+		//dd
+		
 	}
 
 	public String getCpu() {

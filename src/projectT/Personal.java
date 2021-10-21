@@ -14,6 +14,8 @@ public class Personal {
 	   public Personal(String firstName,String secondName, String thirdName,String phoneNumber,
 			            int age, String EGN, String position,int salary,int workHours) {
 	 
+		   
+		   ///sssssssssssssssssssssssssss
 		   this.firstName = firstName;
 		   this.secondName = secondName;
 		   this.thirdName = thirdName;
