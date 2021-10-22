@@ -1,11 +1,13 @@
-package projectT;
+package TechBuzz;
 
 public class Shop {
+	
 	   private double price;
 	   private int yearOfProduction;
 	   private int quantity;
 	   private String brand;
 	   private int warranty;
+	   
 	 // price, yearOfProduction, quantity, brand, warranty
 	   
 	  public Shop() {

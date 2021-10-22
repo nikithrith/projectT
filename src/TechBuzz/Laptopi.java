@@ -1,5 +1,5 @@
-package projectT;
-
+package TechBuzz;
+import java.util.ArrayList;
 public class Laptopi extends Shop{
 	private String cpu;
 	private String gpu;

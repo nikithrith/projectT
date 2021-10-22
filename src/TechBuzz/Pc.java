@@ -1,6 +1,7 @@
-package projectT;
-
+package TechBuzz;
+import java.util.ArrayList;
 public class Pc extends Shop {
+	
 	private String cpu;
 	private String gpu;
 	private String psu;
@@ -9,7 +10,13 @@ public class Pc extends Shop {
 	private String hdd;
 	private String pcCase;
 	private String cooling;
+	
 	// cpu, gpu, psu, ram, motherBoard, hdd, pcCase, cooling
+	
+	
+	public Pc() {
+		
+	}
 	
 	public Pc(String cpu,String gpu,String psu,String ram,String motherBoard,
 			String hdd,String pcCase,String cooling,double price,int yearOfProduction, 

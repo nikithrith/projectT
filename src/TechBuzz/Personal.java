@@ -1,4 +1,4 @@
-package projectT;
+package TechBuzz;
 
 public class Personal {
 	   private String firstName;
@@ -15,21 +15,29 @@ public class Personal {
 		   
 	   }
 	   public Personal(String firstName,String secondName, String thirdName,String phoneNumber,
-			            int age, String EGN, String position,int salary,int workHours) {
+	            int age, String EGN,String position,int salary,int workHours) {
 	 	
 		   this.firstName = firstName;
 		   this.secondName = secondName;
 		   this.thirdName = thirdName;
 		   this.phoneNumber = phoneNumber;
+		   this.position = position;
 		   this.age = age;
 		   this.EGN = EGN;
-		   this.position = position;
 		   this.salary = salary;
 		   this.workingHours = workHours;
 	   }
 
-	public String getFirstName() {
-		return firstName;
+	@Override
+	public String toString() {
+		return  "\n"+ "-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------" + "\n"
+	             +firstName + " " + secondName + " " + thirdName + " ; " + age + " years old " +
+	           " ; " +" Phone Number - " + phoneNumber + " ; " +" EGN - " +EGN +
+	           " ; " +" Position - " + position +  " ; "+" Salary - " + salary + " lv. " + " ; "
+	           + workingHours + " work hours";
+	}
+	public  String getFirstName() {
+		return  firstName;
 	}
 	 
 	public void setFirstName(String firstName) {
@@ -68,7 +76,7 @@ public class Personal {
 		this.age = age;
 	}
 	 
-	public String getEGN() {
+	public  String getEGN() {
 		return EGN;
 	}
 	 
