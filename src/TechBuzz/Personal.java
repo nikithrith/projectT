@@ -32,6 +32,8 @@ public class Personal {
 	   }
 
 	   
+	   // CODE BY STACK - OVERFLOW -------------------------------------------------------------------
+	   //Prints array 
 	   
 	@Override
 	public String toString() {
@@ -41,7 +43,7 @@ public class Personal {
 	           " ; " +" Position - " + position +  " ; "+" Salary - " + salary + " lv. " + " ; "
 	           + workingHours + " work hours";
 	}
-	
+	// ----------------------------------------------------------------------------------------------
 	
 	
 	

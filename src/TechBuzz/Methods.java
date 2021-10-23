@@ -7,7 +7,35 @@ public class Methods {
 	static Scanner sc = new Scanner(System.in);
 	
 	
-	
+	static void mainMenu() {
+		 
+	    System.out.println("What do you want to do ? ----------------------------------------------------------------");
+	    System.out.println(" Add personal - Press (1) ");
+	    System.out.println(" See the current personal - Press (2) ");
+	    System.out.println(" Add a product - Press (3) ");
+	    System.out.println(" See the products - Press (4) ");
+	    
+	    choice = sc.nextInt();
+	    
+	    if(choice == 1) {
+	    	 addPersonalMenu();
+	    	
+	    }else if (choice == 2) {
+
+	       seePersonalMenu();
+	    	
+	    }else if (choice == 3) {
+	    	
+	    	
+	    }else if (choice == 4) {
+	    	
+	    	
+	    }else {
+	    	
+	    	System.out.println("Please insert a valid number");
+	    	mainMenu();
+	    }
+	}
   static void addPersonalMenu() {
 	  
 	  System.out.println(" What do you want to add ? ----------------------------------------------------------------");
@@ -28,7 +56,7 @@ public class Methods {
 	    }else if(choice == 4) {
 	    	Project.addSupportGuy();
 	    }else if(choice == 5){
-	    	Project.mainMenu();
+	    	 mainMenu();
 	    }else {
 	    	System.out.println("Please insert a valid number");
 	    	addPersonalMenu();
@@ -56,7 +84,7 @@ public class Methods {
 	    	Project.seeSupportGuy();
 	    
 	    }else if(choice == 5){
-	    	Project.mainMenu();
+	    	mainMenu();
 	    }else {
 	    	System.out.println("Please insert a valid number");
 	    	addPersonalMenu();
@@ -68,7 +96,7 @@ public class Methods {
 	  System.out.println(" To go to Main Menu - Press (2) ");
 	  choice = sc.nextInt();
 	  if(choice == 2) {
-		  Project.mainMenu();
+		  mainMenu();
 	  }else if(choice == 1) {
 		  seePersonalMenu();
 	  }else {
