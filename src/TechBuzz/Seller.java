@@ -7,15 +7,16 @@ public class Seller extends Personal  {
 	static Scanner sc = new Scanner(System.in);
 	private int sales;
 	private String shift;
+	
 	//firstName , secondName,thirdName,phoneNumber,age,EGN,position,salary,workHours,sales,shift
  
 	public Seller() {
 		
 	}
-	 public Seller(String firstName,String secondName, String thirdName,String phoneNumber,
+	 public Seller(int id,String firstName,String secondName, String thirdName,String phoneNumber,
 	            int age, String EGN,String position,int salary,int workHours, int sales,
 	            String shift) {
-	   super(firstName,secondName,thirdName,phoneNumber,age,EGN,position,salary,workHours);
+	   super(id,firstName,secondName,thirdName,phoneNumber,age,EGN,position,salary,workHours);
        this.sales = sales;
        this.shift = shift;
  
@@ -27,8 +28,11 @@ public class Seller extends Personal  {
 	
 	public static void addSeller(ArrayList<Seller> sellers) {
 	    
-		
+		 System.out.println("SET ID ");
+		 int id = sc.nextInt();
+		    
 	    System.out.println("ENTER  FIRST NAME");
+	    String error1= sc.nextLine();
 	    String firstName = sc.nextLine();
 	    
 	    System.out.println("ENTER SECOND NAME");
@@ -64,7 +68,7 @@ public class Seller extends Personal  {
 	    String error2 = sc.nextLine();
 	    String shift = sc.nextLine();
 	    
-	    sellers.add(new Seller(firstName,secondName,thirdName,phoneNumber,
+	    sellers.add(new Seller(id,firstName,secondName,thirdName,phoneNumber,
 	    		age,EGN,position,salary,workHours,sales,shift));
 
 	}

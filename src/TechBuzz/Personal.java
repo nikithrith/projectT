@@ -10,13 +10,16 @@ public class Personal {
 	   private String position;
 	   private int salary;
 	   private int workingHours;
+	   private int id;
 	 
 	   public Personal() {
 		   
 	   }
-	   public Personal(String firstName,String secondName, String thirdName,String phoneNumber,
+	   
+	   
+	   public Personal(int id,String firstName,String secondName, String thirdName,String phoneNumber,
 	            int age, String EGN,String position,int salary,int workHours) {
-	 	
+	 	   this.id = id;
 		   this.firstName = firstName;
 		   this.secondName = secondName;
 		   this.thirdName = thirdName;
@@ -28,14 +31,28 @@ public class Personal {
 		   this.workingHours = workHours;
 	   }
 
+	   
+	   
 	@Override
 	public String toString() {
 		return  "\n"+ "-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------" + "\n"
-	             +firstName + " " + secondName + " " + thirdName + " ; " + age + " years old " +
+	           +  "ID - " + id +" ; " + firstName + " " + secondName + " " + thirdName + " ; " + age + " years old " +
 	           " ; " +" Phone Number - " + phoneNumber + " ; " +" EGN - " +EGN +
 	           " ; " +" Position - " + position +  " ; "+" Salary - " + salary + " lv. " + " ; "
 	           + workingHours + " work hours";
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	public  String getFirstName() {
 		return  firstName;
 	}
